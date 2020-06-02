@@ -10,3 +10,5 @@ fi;
 
 # -----------------------------------------------------------------------------
 
+# Die benötigten pakete installieren
+/docker/init/aptInstall.sh wget dpkg-dev cifs-utils
