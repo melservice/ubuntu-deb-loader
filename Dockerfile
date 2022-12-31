@@ -9,7 +9,7 @@ COPY rootfs /
 
 # Die aktuellen Paketlisten laden, Updates holen und Initialisierung laufen lassen,
 # danach wird wieder aufgeräumt
-RUN /docker/init/create-ubuntu-deb-loader.sh
+RUN /docker/init/create-ubuntu-batch-basis.sh && /docker/init/create-ubuntu-deb-loader.sh
 
 # Dies ist das Start-Kommando
 CMD ["bash", "/batch/bin/start.sh"]

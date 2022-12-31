@@ -13,4 +13,4 @@ cat /batch/config/URL-*-Download.txt | sort -u | \
 
 dpkg-scanpackages -m /batch/output/ /dev/null | sed '/^Depends:[[:space:]]*$/d' > /batch/output/Packages
 
-exit 0;
+exit 0
